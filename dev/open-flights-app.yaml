@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: open-flights
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: open-flights
+  template:
+    metadata:
+      labels:
+        app: open-flights
+    spec:
+      containers:
+      - name: open-flights
+        image: ishanthakur13/open-flights:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: DATABASE_URL
+          value: postgresql://your_username:your_password@postgresql:5432/your_database_name
