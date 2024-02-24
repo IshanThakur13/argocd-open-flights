@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/IshanThakur13/argocd-open-flights.git'
-    path: dev
+    path: main
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
