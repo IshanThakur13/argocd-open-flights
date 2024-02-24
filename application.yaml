@@ -5,7 +5,7 @@ metadata:
 spec:
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: default
+    namespace: open-flights
   project: default
   source:
     repoURL: 'https://github.com/IshanThakur13/argocd-open-flights.git'
